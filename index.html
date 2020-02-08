@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>A Single Page Application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css">
+    <!--  -->
+</head>
+<body>
+    <main>
+        <div class="page active"  id="home">
+            <h1>Koti</h1>
+            <ol>
+                <li><a href="#" data-target="home" class="nav-link">KOTI</a></li>
+                <li><a href="#" data-target="list" class="nav-link">TAVOITTEET JA LINKKEJÄ</a></li>
+            
+
+                <li><a href="#" id="ohjeet" data-target="instructions" class="nav-link">OHJEET / TEHTÄVÄT</a></li>
+
+            </ol>
+        </br>
+    </br>
+
+            <h2>Sisältö</h2>
+            <table id="taulukko" >
+                <tr >
+                <th>Päivä 1</th>
+                <th>Päivä 2</th>
+                <th>Päivä 3</th>
+                <th>Päivä 4</th>
+                <th>Päivä 5</th>
+            </tr>
+                
+                <tr>
+                    <td>Yhden sivun sovellukset </td>
+                    <td>Scriptit ja kirjastot</td>
+                    <td>Puhelimen sensorien käyttöä ja harjoituksia</td>
+                    <td>Harjoitustyötä ja "tenttimistä"</td>
+                    <td>Harjoitustyötä ja "tenttimistä"</td>
+                </tr>
+                <tr><td>HTML, JS ja CSS perusteita ja harjoituksia </td>
+                    <td>Puhelimen sensorien käyttöä ja harjoituksia</td>
+                    <td>Puhelimen sensorien käyttöä harjoituksia</td>
+                    <td>Harjoitustyötä ja "tenttimistä"</td>
+                    <td>Harjoitustyötä ja "tenttimistä"</td>
+                </tr>
+                <tr><td>Työkalujen asennus ja harjoituksia</td>
+                    <td>Puhelimen sensorien käyttöä ja harjoituksia</td>
+                    <td>Puhelimen sensorien käyttöä ja harjoituksia</td>
+                    <td>Harjoitustyötä ja "tenttimistä"</td>
+                    <td>Mitä tästä opimme?</td>
+                </tr>
+                <button id="taulukkoBtn" hidden>Lisää tavaraa</button>
+            </table>
+        </div>
+        
+        <div class="page" id="list">
+            <h1>Tavoitteet ja linkkejä</h1>
+            <ol>
+                <li><a href="#" data-target="home" class="nav-link">KOTI</a></li>
+                <li><a href="#" data-target="list" class="nav-link">TAVOITTEET JA LINKKEJÄ</a></li>
+                <ul>
+                    <li class="tab"><a href="#" id="Tavoitteet" data-target="Tavoitteet" class="nav-link">Tavoitteet</a></li>
+                    <li class="tab"><a href="https://www.github.com" >GitHub</a></liclass="tab">
+                    <li class="tab"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript dokumentaatiota (MDN)</a></liclass="tab">
+                    <li class="tab"><a href="https://developer.mozilla.org/en-US/docs/Web/API">Spesifikaatioita rajapintoja mm. sensorien käyttöön </a></liclass="tab">
+                    <li class="tab"><a href="https://w3c.github.io/sensors/" >Dokumentaatiota sensoreista</a></liclass="tab">
+                        <li class="tab" hidden><a href="https://leafletjs.com/examples.html">Leaflet (kartta- ja paikannuskirjastoja</a></liclass="tab">
+                        <li class="tab" hidden><a href="https://googlechrome.github.io/samples/image-capture/grab-frame-take-photo.html">Esimerkki kameran käytöstä</a></liclass="tab">
+                </ul>
+                <li><a href="#" id="ohjeet" data-target="instructions" class="nav-link">OHJEET / TEHTÄVÄT</a></li>
+
+            </ol>
+            
+                
+            
+        </div>
+        
+       
+        <div class="page" id="instructions">
+            <h1 id="ohjeHeader">Ohjeet / tehtävät</h1>
+            <ol>
+                <li><a href="#" data-target="home" class="nav-link">KOTI</a></li>
+                <li><a href="#" data-target="list" class="nav-link">TAVOITTEET JA LINKKEJÄ</a></li>
+               
+                <li><a href="#" id="ohjeet" data-target="instructions" class="nav-link">OHJEET / TEHTÄVÄT</a></li>
+            </ol>
+            <li><a href="#" id="perusteita" data-target="perusteita" class="nav-link">HTML-perusteita</a></li>
+            <li><a href="#" id="jsperusteita" data-target="jsperusteita" class="nav-link">JavaScript-perusteita</a></li>
+        </div>
+        
+        
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

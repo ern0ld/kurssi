@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="spa.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+</head>
+<body id="jsperusteet">
+    
+    <main>
+       
+   
+<div class="content2 content">
+    <h1>JavaScript-perusteita</h1>
+    
+    <h5>
+        Muuttujat voidaan esitellä JavaScriptissä termillä ”let” tai ”var”. 
+        Toisin kuin esim. Javassa, jossa datan tyypitys on tarkkaa.
+        Käytetään ainakin aluksi mieluummin var-termiä, näissä on hienoinen ero. </br></h5></br>
+
+        <h3>Uusi otsikkoelementti JavaScriptillä:</h3>
+    <h5>uusiHeader = document.createElement(’h1’); //uusi otsikkoelementti</br>
+        uusiHeader.innerHTML = ”Tähän otsikossa lukeva teksti”;</br>
+        document.body.appendChild(uusiHeader); //asettaa otsikon sivulle</br></br></h5>
+
+        <h3>Uusi painike luodaan JavaScriptillä seuraavasti:</h3>
+        <h5>var uusiBtn = document.createElement(’button’); //uusi Button-elementti</br>
+        uusiBtn.innerHTML = ”tähän painikkeessa lukeva teksti”;</br>
+        document.body.appendChild(uusiBtn); //asettaa painikkeen sivulle</h5>
+    
+</br>
+<h3>Olemassaolevan elementin käsittely id:n perusteella
+</h3>
+<h5>var headerElement = document.getElementById(’elementin id’); //Hakee html-dokumentista elementin annetun id:n perusteella
+    Nyt kyseistä elementtiä voi muokata tilanteen mukaan 
+    esim. headerElement.hidden = true; //piilottaa otsikkoelementin
+    </h5></br>
+
+    <h3>JavaScript-tiedoston liittäminen HTML-tiedostoon</h3>
+<h5>Html-tiedostossa (lisätään yleensä loppuun) JavaScript-tiedoston sijainti osoitetaan: </br>
+	 script src=”tiedostonimi.js"> 
+</h5>
+</br>
+<h3>Funktion luominen JavaScriptillä:</h3>
+<h5>function teeJotain(){</br>
+	console.log(”funktiota kutsuttu”) //tulostaa konsoliin mikäli funktiota on kutsuttu</br>
+}
+</h5></br>
+<h3>Eventien eli tapahtuminen seuranta (tässä tapauksessa Buttonin klikkaus)</h3>
+<h5>munPainike.addEventListener("click", teeJotain)</h5>
+
+</br> 
+<h3>Toinen vaihtoehto Buttonin klikkauksen hallinnalle:</h3>
+<h5>munPainike.onclick = function(){</br>
+    console.log("klikattu")</br>}
+</h5>
+
+</div>
+<script src="spa.js"> </script>
+    </main>
+</body>
+</html>

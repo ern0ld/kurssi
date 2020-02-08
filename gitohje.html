@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ohjeistusta/Tehtäviä</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="gitohje">
+    <main >
+       
+    <div id="gitDiv">
+    <h1>GitHub-asennusohjeita</h1>
+    
+        
+        
+       <h2>1. Lataa Git-scm osoitteesta https://git-scm.com/download</h2> 
+
+       <h5>Asennuksen aikana valitse Choosing the default editor used by Git-kohdassa -> Use Visual Studio Code as Git’s default editor</br>
+        
+        -> Kohdassa Configuring the terminal emulator to use with Git Bash-kohdassa -> Use Windows’ default console window</br>
+    </h5> 
+       <h5> Käynnistä Git Bash. Palataan tähän myöhemmin.</h5> 
+        
+        <h2>2. Rekisteröidy GitHubiin osoitteessa https://github.com/</h2>
+
+        <h5>Kun rekisteröinti on valmis, jätä vielä toistaiseksi luomatta Gitin ehdottama uusi repository. Tehdään muutama asetus ensin ja palataan tähän pian.</br>
+        Älä kuitenkaan sulje GitHub.com-sivua, tulemme pian takaisin.</h5>
+
+       <h2>3. Avaa äsken asennettu Git Bash (terminaali)</h2>
+        
+       <h3> Kirjoita seuraava komennot</h3>
+
+       <h5> git config –global user.name ”Nimesi”</br>
+        git config –global user.email ”sähköpostisi”</br>
+        
+        Siirry terminaalissa kansioon, jonka loit aiemmin (ekaSPA)</br>
+        Terminaalissa navigoiminen -> cd kansion nimi (avaa kansion) </br>
+        cd .. (Poistuu sen hetkisestä kansiosta ja siirtyy sen yläkansioon)</br>
+        
+        Eli terminaalissa esim. </br>
+        cd c: -> cd users -> cd Erkki -> cd documents -> cd ekaSpa</br>
+        Jonka jälkeen ollaan osoitteessa C:\Users\Erkki\Documents\ekaSPA</br>
+        Kun olet siirtynyt terminaalissa haluamaasi kansioon esim. C:/Erkki/munkansio</br>
+    </br>
+       <h5> Kirjoita seuraavat komennot</h5>
+    </br>
+       <h5> git init</br>
+        # alustaa kansion gitin local repositoryksi</br>
+    </br>
+        git add .
+	HUOM!! Tämä pitää tehdä kahdesti, koska ensimmäisellä kerralla tulee varoitus
+        # valmistaa kaiken siirrettäväksi remote repositoryyn (luo mm. README.md-tiedoston)</br>
+        (git status näyttää repositoryn statuksen)</br>
+        
+       Tässä kohdassa voit mennä luomaan uuden repositoryn osoitteessa github.com (rekisteröinnin jälkeen tullut kohta, jonka yli hyppäsimme)
+    </h5></br>
+      <h3>Kun uusi repository on luotu, kirjoita terminaaliin</h3> 
+    </br>
+      <h5> git remote add origin remote https://github.com/käyttäjänimesi/repositorysi_nimi.git</br>
+        #asettaa remote repositoryn</br></br>
+        git remote -v</br>
+        #todentaa remote repositoryn url-osoitteen</br>
+    </br>
+        git push  -u origin master</br>
+        #”Työntää” local repositoryssa tapahtuneet muutokset remote repositoryyn</br>
+    </br>
+        
+        Lisää Visual Studio Codeen GitHub-lisäosa</br>
+        Visual Studio Codessa valitse View->Extensions (tai paina Ctrl+Shift+X) ja kirjoita GitHub. Valitse ensimmäinen tulos ja Install.</br>
+        </h5>
+        <h5 id="accessTokenHeader" hidden>Luo Personal Access Token </br>
+        /*Osoitteessa GitHub.com -> Oikean yläkulman kuvakkeesta Settings -> Developer Settings -> Personal access tokens -> Generate new token -> Lisää jokin teksti Note-kohtaa ja ruksaa repo-kohta-> Generate token -> kopioi token ja siirry Visual Studio Codeen*/</br>
+        Paina Ctrl+Shift+p ja kirjoita GitHub: Set Personal Access Token. Liitä äsken luomasi Token tähän ja paina Enter. Voit nyt käyttää ja ohjata GitHubia Visual Studio Coden terminaalilla.</h5> 
+        
+        </br></br>
+
+	<h3>Omat projektit nettiin (GitHub toimii palvelimena</h3></br></br>
+
+	<h5>
+Mene omaan projektisi repositoryyn github.comissa ja paina settings (kuvassa). </br>
+Selaa alaspäin kunnes löytyy kohta Github pages. </br>
+<img src="git_settings.jpg">
+Aseta kohtaan Source -> master branch. 
+<img src="github_pages.jpg">
+Odota hetki ja voit nähdä projektisi osoitteessa https://kayttajatunnus.github.io/repositorysi_nimi/</br>
+</h5>
+
+        
+    </br></br>
+       <h5>Erilaisia komentoja terminaaliin (Git Bash)</br>
+        mkdir munkansio (Luo kansion nimeltä munkansio)</br>
+        touch munteksti.txt (luo teksitiedoston nimeltä munteksti)</h5> 
+        
+    </span>
+    </div>
+    <script src="spa.js"></script>
+</main>
+</body>
+
+
+</html>

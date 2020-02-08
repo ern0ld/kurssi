@@ -1,0 +1,127 @@
+/**** DEFAULTS ****/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;  /* 1rem will equal this now */
+    line-height: 1.6;
+    font-family: sans-serif; /* add google fonts */
+}
+
+
+/**** PAGES ****/
+.page{
+    display: none;
+    width: 100%;
+    min-height: 100%; /* allow for content off the bottom of the page */
+    position: fixed;  /* or absolute if the user needs to scroll for more content */
+    padding: 1rem 2rem;
+}
+.active{
+    display: block; 
+}
+#jsperusteet{
+    background-color: khaki;
+    margin-left: 20px;
+}
+#htmlperusteet{
+    background-color: skyblue;
+}
+table.a{
+    table-layout: fixed;
+    border-collapse: collapse;
+    width:100%;
+    border: 1px solid black;
+}
+th{
+    
+   
+    border: 1px solid black;
+}
+
+td {
+
+   text-align: center;
+    border: 1px solid black;
+  
+  }
+#home{
+    background-color: hsl(60, 50%, 80%);
+}
+#list{
+    background-color: hsl(180, 50%, 80%);
+}
+#detail{
+    background-color: hsl(240, 50%, 80%);
+}
+#instructions{
+    background-color: hsl(7, 50%, 80%);
+    
+}
+#tasks{
+    background-color: hsl(253, 50%, 80%);
+}
+.tab {
+    margin-left: 40px;
+}
+#textarea
+{
+    font-size: large;
+    font-weight: 200;
+    background-color: hsl(167, 32%, 60%);
+}
+#gitohje{
+    margin: 20px;
+    background-color: hsl(124, 50%, 80%);
+    width: 100%;
+    min-height: 100%; /* allow for content off the bottom of the page */
+    position: fixed;  /* or absolute if the user needs to scroll for more content */
+    padding: 1rem 2rem;
+ 
+}
+#tehtava3ohje
+{
+    margin:20px;
+    background-color: darkseagreen;
+}
+#tavoiteohje{
+    margin: 20px;
+    background-color: lightgreen;
+}
+#gitDiv {
+    margin:50px;
+}
+#visualohje {
+    margin:20px;
+    background-color: rgb(190, 157, 223);
+}
+#tavoite {
+    right: 40px;
+}
+object {
+    width:100%;
+}
+
+img {
+    max-width: 100%;
+  height: auto;
+  top: 50px;
+  right: 50px;
+  }
+  span {
+      max-width: 50%;
+  }
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+h4{
+    size: 20px;
+}
+.big{
+    font-size: 5rem;
+    font-weight: 900;
+}

@@ -1,0 +1,54 @@
+Lataa ja asenna Git-scm osoitteesta  
+https://git-scm.com/download
+Asennuksen aikana valitse Choosing the default editor used by Git-kohdassa -> Use Visual Studio Code as Git’s default editor
+Kohdassa Configuring the terminal emulator to use with Git Bash-kohdassa -> Use Windows’ default console window
+
+Käynnistä Git Bash. Palataan tähän myöhemmin.
+
+Rekisteröidy GitHubiin osoitteessa
+ https://github.com/
+Kun rekisteröinti on valmis, luo uusi repository (Create a new repository). Voit valita haluamasi nimen.
+
+Tämän jälkeen avaa äsken asennettu Git Bash
+Kirjoita
+git config –global user.name ”Nimesi”
+git config –global user.email ”sähköpostisi”
+
+Siirry terminaalissa kansioon, jonka loit aiemmin (ekaSPA)
+terminaalissa navigoiminen cd kansion nimi (avaa kansion) 
+cd .. (siirtyy yläkansioon)
+eli terminaalissa esim. 
+cd c: -> cd users -> cd Erkki -> cd documents -> cd ekaSpa
+ollaan osoitteessa C:\Users\Erkki\Documents\ekaSPA
+Kun olet siirtynyt terminaalissa haluamaasi kansioon esim. C:/Erkki/munkansio
+git init
+# alustaa kansion gitin local repositoryksi
+git add . 
+# valmistaa kaiken siirrettäväksi remote repositoryyn (luo mm. README.md-tiedoston)
+git status näyttää repositoryn statuksen
+
+Luo uusi remote repository osoitteessa github.com
+
+git remote add origin remote < https://github.com/käyttäjänimesi/repositorysi_nimi.git>
+# asettaa remote repositoryn
+git remote -v
+# todentaa remote repositoryn url-osoitteen
+
+git push  -u origin master
+# ”Työntää” local repositoryssa tapahtuneet muutokset remote repositoryyn
+
+
+Lisää Visual Studio Codeen GitHub-lisäosa
+Visual Studio Codessa valitse View->Extensions (tai paina Ctrl+Shift+X) ja kirjoita GitHub. Valitse ensimmäinen tulos ja Install.
+
+Luo Personal Access Token 
+/*Osoitteessa GitHub.com -> Oikean yläkulman kuvakkeesta Settings -> Developer Settings -> Personal access tokens -> Generate new token -> Lisää jokin teksti Note-kohtaa ja ruksaa repo-kohta-> Generate token -> kopioi token ja siirry Visual Studio Codeen*/
+Paina Ctrl+Shift+p ja kirjoita GitHub: Set Personal Access Token. Liitä äsken luomasi Token tähän ja paina Enter. Voit nyt käyttää ja ohjata GitHubia Visual Studio Coden terminaalilla.
+
+
+
+
+Erilaisia komentoja terminaaliin (Git Bash)
+mkdir munkansio (Luo kansion nimeltä munkansio)
+touch munteksti.txt (luo teksitiedoston nimeltä munteksti)
+

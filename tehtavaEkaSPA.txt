@@ -1,0 +1,3 @@
+Tehtävä 3. Luo Visual Studio Codella ensimmäinen oma Single Page Application. 
+Sivun pitää sisältää otsikkoelementti (h1), taustaväri (jokin muu kuin valkoinen) 
+ja painike (button) joka vaihtaa otsikkoelementin tekstin.
